@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+a,
+span {
+    font-family: 'Kanit', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a:hover {
+    color: rgb(104, 40, 255);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+}
+
+.icon-arrow {
+    font-size: 2vh;
+    margin-left: 1vh;
+
+}
+
+.btn:hover .icon-arrow {
+    animation: arrow 1s infinite;
+    font-size: 2vh;
+}
+
+
+.container-title {
+
+    font-size: 6vmin;
+    margin-bottom: 5vh;
+
+}
+
+.container-text {
+    width: 70%;
+    font-size: 2vmin;
+    line-height: 3vmin;
+    font-weight: 500;
+    margin-bottom: 5vh;
+}
+
+.btn {
+    border: 1vh solid rgb(175, 132, 255);
+    padding: 0.5vh 2vh;
+    border-radius: 9vh;
+    background-color: rgb(175, 132, 255);
+    transition: 0.5s;
+    font-weight: 600;
+    font-size: 2vh;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: rgb(175, 132, 255);
+
+}
+
+.bg-dark {
+    background-color: rgb(28, 28, 48);
+}
+
+.bg-image-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .3)),
+        url("../img/banner1.png");
+
+}
+
+.bg-image-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .3)),
+        url("../img/banner2.png");
+
+}
+
+.header-page {
+    color: white;
+    width: 100%;
+    height: 15vh;
+    padding: 0 3vh;
+    display: flex;
+    align-items: center;
+    font-size: 3vmin;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.header-menu ul {
+    display: flex;
+    gap: 3vh;
+}
+
+.header-menu li::before {
+    content: '';
+    width: 0;
+    height: 0.5vh;
+    background-color: rgb(175, 132, 255);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.header-menu li:hover::before {
+    width: 100%;
+}
+.header-menu li::after {
+    content: '';
+    width: 0;
+    height: 0.5vh;
+    background-color: rgb(175, 132, 255);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.header-menu li:hover::after {
+    width: 100%;
+}
+
+.logo-style {
+    background-color: rgb(175, 132, 255);
+    padding: 1vmin 1.5vmin;
+    border-radius: 5vmin 6vmin;
+}
+
+.header-menu a {
+    font-size: 4vh;
+    font-weight: 600;
+    letter-spacing: 0.3vh;
+    transition: 0.5s;
+}
+
+.header-menu a:hover {
+    color: rgb(175, 132, 255);
+}
