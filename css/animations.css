@@ -1,11 +1,34 @@
-@keyframes arrow{
+@keyframes arrow {
 
-50%
-{
-    transform: translateX(0.5vh);
+    50% {
+        transform: translateX(0.5vh);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
 }
-100%
-{
-    transform: translateX(0px);
+
+@keyframes controler {
+    50% {
+        transform: rotate(1deg);
+    }
+
+    100% {
+        transform: rotate(359deg);
+    }
 }
+
+@keyframes controlerIdle {
+    0% {
+        transform: rotate(7deg);
+    }
+
+    50% {
+        transform: rotate(-7deg);
+    }
+
+    100% {
+        transform: rotate(7deg);
+    }
 }

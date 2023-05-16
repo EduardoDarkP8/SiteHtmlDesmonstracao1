@@ -1,0 +1,20 @@
+@media(max-width: 1024px) {
+    .card-item {
+        width: 45%;
+    }
+}
+
+@media(max-width: 600px) {
+
+    .header-page {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card-item {
+        width: 80%;
+    }
+
+}
